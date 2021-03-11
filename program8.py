@@ -30,6 +30,7 @@ class Simple_drawing_window(QWidget):
         p.drawPixmap(QRect(200,100,320,320),self.rabbit)
         p.end()
 
+<<<<<<< HEAD
 class Simple_drawing_window3(Simple_drawing_window):
     def __init__(self):
         super().__init__()
@@ -51,6 +52,13 @@ class Simple_drawing_window3(Simple_drawing_window):
 
 
     
+=======
+class Simple_drawing_window1(Simple_drawing_window):
+    def __init__(self):
+        QWidget.__init__(self, None)
+        
+
+>>>>>>> master
 def main():
     app = QApplication(sys.argv)
     #w = Simple_drawing_window()
