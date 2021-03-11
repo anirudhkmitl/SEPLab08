@@ -33,6 +33,7 @@ class Simple_drawing_window(QWidget):
 class Simple_drawing_window3(Simple_drawing_window):
     def __init__(self):
         super().__init__()
+        
 
     def paintEvent(self,e):
         p = QPainter()
@@ -47,7 +48,8 @@ class Simple_drawing_window3(Simple_drawing_window):
 
         p.setPen(QColor(255,121,0))
         p.setBrush(QColor(124,127,0))
-    
+        p.drawPixmap(QRect(200,100,320,320),self.rabbit)
+        p.end()
 
 
 class Simple_drawing_window1(Simple_drawing_window):
