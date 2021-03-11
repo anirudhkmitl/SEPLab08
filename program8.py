@@ -80,17 +80,14 @@ class Simple_drawing_window1(Simple_drawing_window):
 
 def main():
     app = QApplication(sys.argv)
-<<<<<<< HEAD
     w = Simple_drawing_window1()
     w.show()
 
-=======
     #w = Simple_drawing_window()
     w3 = Simple_drawing_window3()
     
     #w.show()
     w3.show()
->>>>>>> 4ddbab62e414f2891cc87195f78706ac9e21a4b1
     return app.exec_()
 
 if __name__ == "__main__":
