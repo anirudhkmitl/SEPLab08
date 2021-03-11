@@ -30,6 +30,26 @@ class Simple_drawing_window(QWidget):
         p.drawPixmap(QRect(200,100,320,320),self.rabbit)
         p.end()
 
+class Simple_drawing_window3(Simple_drawing_window):
+    def __init__(self):
+        super().__init__()
+
+    def paintEvent(self,e):
+        p = QPainter()
+        p.begin(self)
+
+        p.setPen(QColor(0,0,0))
+        p.setBrush(QColor(0,127,0))
+        p.drawPolygon([
+            QPoint(70,22),QPoint(100,110),
+            QPoint(25,100),QPoint(100,150),
+            ])
+
+        p.setPen(QColor(255,121,0))
+        p.setBrush(QColor(124,127,0))
+    
+
+
 class Simple_drawing_window1(Simple_drawing_window):
     def __init__(self):
         QWidget.__init__(self, None)
@@ -60,9 +80,17 @@ class Simple_drawing_window1(Simple_drawing_window):
 
 def main():
     app = QApplication(sys.argv)
+<<<<<<< HEAD
     w = Simple_drawing_window1()
     w.show()
 
+=======
+    #w = Simple_drawing_window()
+    w3 = Simple_drawing_window3()
+    
+    #w.show()
+    w3.show()
+>>>>>>> 4ddbab62e414f2891cc87195f78706ac9e21a4b1
     return app.exec_()
 
 if __name__ == "__main__":
