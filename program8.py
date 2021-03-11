@@ -30,6 +30,11 @@ class Simple_drawing_window(QWidget):
         p.drawPixmap(QRect(200,100,320,320),self.rabbit)
         p.end()
 
+class Simple_drawing_window1(Simple_drawing_window):
+    def __init__(self):
+        QWidget.__init__(self, None)
+        
+
 def main():
     app = QApplication(sys.argv)
     w = Simple_drawing_window()
