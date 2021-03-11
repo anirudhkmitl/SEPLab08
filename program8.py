@@ -101,6 +101,9 @@ def main():
     w = Simple_drawing_window1()
     w.show()
 
+    w2 = Simple_drawing_window2()
+    w2.show()
+
     #w = Simple_drawing_window()
     w3 = Simple_drawing_window3()
     
